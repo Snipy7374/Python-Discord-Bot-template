@@ -137,9 +137,7 @@ async def reloadcog_error(ctx, error):
   #Your error handler here (for reloadcog cmd)
   await ctx.reply(error)
   
-  
 
-#https://github.com/egeyardimci/Discord-Py-Bot-Template
 
 server()
 bot.run(TOKEN, reconnect=True)
