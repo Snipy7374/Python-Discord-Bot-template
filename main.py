@@ -76,7 +76,7 @@ async def on_ready():
 
 
 @bot.command()
-@commands.has_permissions(administrator=True)
+@commands.is_owner()
 async def reloadcog(ctx, folder: str):
   # folder == admin, fun, misc
   cog_count = 0
@@ -94,7 +94,7 @@ async def reloadcog(ctx, folder: str):
   
 
 @bot.command()
-@commands.has_permissions(administrator=True)
+@commands.is_owner()
 async def reloadAll(ctx):
   cog_count = 0
   
